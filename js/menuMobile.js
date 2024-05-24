@@ -9,3 +9,34 @@ buttonMenu.addEventListener('click', function () {
     
     isMenuOpen = !isMenuOpen
 })
+
+
+function escreverTexto(texto, atraso, elemento, delayInicial = 0) {
+    let contadorDeLetras = 0;
+  
+    function escrever() {
+      if (contadorDeLetras < texto.length) {
+        elemento.textContent += texto.charAt(contadorDeLetras);
+        contadorDeLetras++;
+        setTimeout(escrever, atraso);
+      }
+    }
+  
+    setTimeout(escrever, delayInicial);
+  }
+
+escreverTexto();
+
+const texto1 = "Kaine Lirines";
+const elemento1 = document.querySelector(".sec_titulo_autor");
+
+const texto2 = "Minhas Habilidades";
+const elemento2 = document.querySelector(".sec_titulo_habilidades");
+
+const texto3 = "Meus Projetos";
+const elemento3 = document.querySelector(".sec_titulo");
+
+
+escreverTexto(texto1, 150, elemento1);
+escreverTexto(texto2, 150, elemento2, 1800);
+escreverTexto(texto3, 150, elemento3);

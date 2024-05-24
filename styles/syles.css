@@ -42,6 +42,27 @@ main{
     padding: 5% 5%;
     gap: 5.125rem;
 }
+
+#nome-autor::after {
+    content: "|";
+    animation: piscar 1s infinite;
+}
+#habilidades::after{
+    content: "|";
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+}
 .principal_projetos{
     display: flex;
     box-sizing: border-box;
@@ -137,6 +158,10 @@ nav a:hover::after{
     text-align: justify;
     font-size: var(--fonte-tamanho-secundario);
 }
+.sec_titulo_autor{
+    text-align: justify;
+    font-size: var(--fonte-tamanho-secundario);
+}
 strong{
     font-family: var(--fonte-principal);
     color: var(--cor-terciaria);
@@ -181,7 +206,11 @@ strong{
     border: 0.125rem solid var(--cor-terciaria);
     box-sizing: border-box;
 }
-
+.img_projeto_kaine{
+    box-sizing: border-box;
+    max-width: 24rem;
+    border-radius: 0.5rem;
+}
 /* Botões */
 .div_btn{
     display: flex;
