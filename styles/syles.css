@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+#main-content {
+    background-image: url("/assets/Background\ Códigos.png");
+    background-size: cover; /* Para garantir que a imagem cubra todo o elemento */
+    background-position: center; /* Para centralizar a imagem */
+}
+/* 
+verificar hover dos botões
+*/
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-principal: 'Do Hyeon', sans-serif;
+    --fonte-secundaria: 'Lato', sans-serif;
+
+    --fonte-tamanho-primario: 1.5rem;
+    --fonte-tamanho-secundario: 2.25rem
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+ }
+body {
+    background-color: #2B2B2B;
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+    height: 100vh;
+    font-size: var(--fonte-tamanho-primario);
+}    
+
+main{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    padding: 5% 5%;
+    gap: 5.125rem;
+}
+.principal_projetos{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    padding: 5% 5%;
+    gap: 5.125rem;
+}
+.div_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+.cabecalho .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.1875rem;
+    position: relative;
+}
+.menuDesktop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 3rem;
+}
+.menu_list{
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.menu_item{
+    list-style-type: none;
+}
+.navegacao_menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 0.5rem;
+    color: var(--cor-terciaria);
+}
+.nav_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+nav a{
+    position: relative;
+}
+nav a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-terciaria);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+nav a:hover::after{
+    width: 100%;
+}
+.menu_list--mobile{
+    display: none;
+}
+.invisible{
+    display: none;
+}
+.button_menu{
+    width: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+/* Section */
+.sec_titulo{
+    text-align: justify;
+    font-size: var(--fonte-tamanho-secundario);
+}
+strong{
+    font-family: var(--fonte-principal);
+    color: var(--cor-terciaria);
+}
+.sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    width: 50%;
+    gap: 2rem;
+}
+.sec_projetos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    gap: 14rem;
+}
+.sec_txt{
+    padding-top: 2rem;
+}
+.div_habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.div_habilidades_filho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.img_kaine{
+    width: 90%;
+    border-radius: 7rem;
+    border: 0.125rem solid var(--cor-terciaria);
+    box-sizing: border-box;
+}
+
+/* Botões */
+.div_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+.div_btn_projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+.sec_btn_redes_sociais{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 23.625rem;
+    height: 4.25rem;
+    border: 0.125rem solid var(--cor-terciaria);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #2B2B2B;
+    border-color: #22d4fd;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    background-color: transparent;
+}
+.sec_btn_redes_sociais:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-terciaria);
+}
+.sec_btn_linguagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.125rem solid var(--cor-terciaria);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: #2B2B2B;
+    border-color: #22d4fd;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    background-color: transparent;
+}
+.sec_img_habilidades{
+    width: 2rem;
+    height: 2rem;
+}
+.img_kaine{
+    width: 50%;
+    border-radius: 7rem;
+    border: 0.125rem solid var(--cor-terciaria);
+    box-sizing: border-box;
+}
+.img_habilidades{
+    width: 40%;
+}
+/* Rodapé */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10.5rem;
+    gap: 25px;
+    border-top: solid 2px var(--cor-terciaria);
+}
+.footer_dev{
+    color: #B9B9B9;
+}
+
+@media screen and (max-width: 1080px){
+    main{
+        flex-direction: column-reverse;
+    }
+
+    .sec{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        width: 90%;
+        gap: 50px;
+    }
+    .principal{
+        padding: 5% 1%;
+    }
+    section{
+        margin-bottom: 4%;
+    }
+    .button_menu{
+        display: initial;
+    }
+    .menu_list{
+        display: none;
+    }
+    .menu_list--mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 0;
+        background-color: var(--cor-hover);
+    }
+    .div_btn_projetos{
+        display: flex;
+        flex-direction: column;
+    }
+}
